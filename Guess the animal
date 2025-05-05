@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char animal[20];
+    printf("Welcome to the Guess the Animal Game!\n");
+    printf("I am thinking of an animal. Can you guess what it is?\n");
+    printf("Enter your guess: ");
+    scanf("%s", animal);
+    if (strcmp(animal, "elephant") == 0) {
+        printf("Congratulations! You guessed it right. It's an elephant!\n");
+    } else {
+        printf("Oops! That's not the animal I'm thinking of. Try again!\n");
+    }
+    return 0;
+}
